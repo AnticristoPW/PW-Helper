@@ -1,0 +1,15 @@
+{
+  "name": "pw-helper-electron",
+  "version": "0.1.0",
+  "description": "Recriação em Electron do PW Helper (gerenciador de contas e multiboxing para Perfect World).",
+  "main": "src/main/main.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/start.js",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}

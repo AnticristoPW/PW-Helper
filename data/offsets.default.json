@@ -1,0 +1,1550 @@
+{
+ "version": "2026.10.12",
+ "servers": {
+  "the_classic_126": {
+   "label": "The Classic 1.2.6",
+   "module": "ElementClient.exe",
+   "attributes": {
+    "nivel": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4C4",
+     "type": "int"
+    },
+    "hp": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4CC",
+     "type": "int"
+    },
+    "hp_max": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x518",
+     "type": "int"
+    },
+    "mp": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D0",
+     "type": "int"
+    },
+    "mp_max": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x51C",
+     "type": "int"
+    },
+    "xp": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D4",
+     "type": "int"
+    },
+    "xp_alvo": {
+     "base": "0xA4B258",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "chi": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4E0",
+     "type": "int"
+    },
+    "amuleto_hp": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int"
+    },
+    "amuleto_hp_max": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int"
+    },
+    "hierograma_mp": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0xA1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x5A0",
+     "type": "int",
+     "ptr_size": 4
+    }
+   },
+   "shop": {
+    "module": "ElementClient.exe",
+    "static_offset": "0xA1D6F4",
+    "img_url": "https://pwdatabase.theclassic.games/assets/img/vtheclassicpw126/{id}.png",
+    "chain": [
+     "0x4",
+     "0x3F0",
+     "0x0"
+    ],
+    "player": {
+     "moedas": "0x5A0",
+     "ultimo_login": "0x161C",
+     "janela": "0x680",
+     "role": "0x4B8",
+     "pos_x": "0x3C",
+     "pos_y": "0x40",
+     "pos_z": "0x44",
+     "fwd_x": "0x6C",
+     "fwd_z": "0x4C",
+     "nome_loja": "0x828"
+    },
+    "janela_vendo_outra": 3,
+    "janela_loja_ativa": 2,
+    "map": {
+     "off_x": 4000,
+     "off_z": 5500,
+     "divisor": 10
+    },
+    "manager_layout": {
+     "array": "0xC",
+     "capacity": "0x10"
+    },
+    "item": {
+     "id": "0xC",
+     "count": "0x14",
+     "max_stack": "0x18",
+     "price": "0x1C"
+    },
+    "scan": {
+     "item_struct_max": "0x100",
+     "name_offsets": [
+      "0x4",
+      "0x8",
+      "0xC"
+     ]
+    },
+    "sections": {
+     "bag": {
+      "manager": "0x1070",
+      "remote_only": false
+     },
+     "vendendo": {
+      "manager": "0x10C4",
+      "remote_only": false
+     },
+     "comprando": {
+      "manager": "0x10C8",
+      "remote_only": false
+     },
+     "carrinho_compra": {
+      "manager": "0x1084",
+      "remote_only": true
+     },
+     "carrinho_venda": {
+      "manager": "0x1088",
+      "remote_only": true
+     },
+     "loja_remota_vendendo": {
+      "manager": "0x10CC",
+      "remote_only": true
+     },
+     "loja_remota_comprando": {
+      "manager": "0x10D0",
+      "remote_only": true
+     }
+    }
+   },
+   "equipment": {
+    "module": "ElementClient.exe",
+    "image_base": "0x400000",
+    "ptr_size": 4,
+    "game": {
+     "ptr_va": "0xE39F5C",
+     "vtable": "0xD3A13C"
+    },
+    "player": {
+     "static_va": "0xE1D6F4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "vtable": "0xD3B6C4",
+     "level": "0x4C4",
+     "class": "0x6E4",
+     "free_points": "0x4DC",
+     "stats": "0x508"
+    },
+    "inventory": {
+     "offset": "0x1074",
+     "vtable": "0xD3BE0C",
+     "array": "0xC",
+     "size": "0x10",
+     "max": 64
+    },
+    "item": {
+     "tid": "0xC"
+    },
+    "classes": {
+     "0xD3BE24": "armor",
+     "0xD3C9AC": "decoration",
+     "0xD3DC24": "weapon"
+    },
+    "equip": {
+     "refine": "0x90",
+     "holes": {
+      "vtable_at": "0x98",
+      "vtable": "0xD28244",
+      "data": "0x9C",
+      "count": "0xA0",
+      "max": 8
+     },
+     "props": {
+      "vtable_at": "0xAC",
+      "vtable": "0xD3CB70",
+      "data": "0xB0",
+      "count": "0xB4",
+      "max": 64,
+      "stride": "0x1C",
+      "id": "0x0",
+      "nparams": "0x4",
+      "embedded": "0x8",
+      "params": "0xC"
+     }
+    },
+    "elements": {
+     "armor": "0xD0",
+     "decoration": "0xD0"
+    }
+   }
+  },
+  "the_classic_126_2": {
+   "label": "Teste",
+   "module": "ElementClient.exe",
+   "attributes": {
+    "nivel": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4C4",
+     "type": "int"
+    },
+    "hp": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4CC",
+     "type": "int"
+    },
+    "hp_max": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x518",
+     "type": "int"
+    },
+    "mp": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D0",
+     "type": "int"
+    },
+    "mp_max": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x51C",
+     "type": "int"
+    },
+    "xp": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D4",
+     "type": "int"
+    },
+    "chi": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4E0",
+     "type": "int"
+    },
+    "xp_alvo": {
+     "base": "0xA4B238",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "amuleto_hp": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int"
+    },
+    "amuleto_hp_max": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int"
+    },
+    "hierograma_mp": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0xA1D6E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x5A0",
+     "type": "int",
+     "ptr_size": 4
+    }
+   },
+   "shop": {
+    "module": "ElementClient.exe",
+    "static_offset": "0xA1D6E4",
+    "img_url": "https://pwdatabase.theclassic.games/assets/img/vtheclassicpw126/{id}.png",
+    "chain": [
+     "0x4",
+     "0x3F0",
+     "0x0"
+    ],
+    "player": {
+     "moedas": "0x5A0",
+     "ultimo_login": "0x161C",
+     "janela": "0x680",
+     "role": "0x4B8",
+     "pos_x": "0x3C",
+     "pos_y": "0x40",
+     "pos_z": "0x44",
+     "fwd_x": "0x6C",
+     "fwd_z": "0x4C",
+     "nome_loja": "0x828"
+    },
+    "janela_vendo_outra": 3,
+    "janela_loja_ativa": 2,
+    "map": {
+     "off_x": 4000,
+     "off_z": 5500,
+     "divisor": 10
+    },
+    "manager_layout": {
+     "array": "0xC",
+     "capacity": "0x10"
+    },
+    "item": {
+     "id": "0xC",
+     "count": "0x14",
+     "max_stack": "0x18",
+     "price": "0x1C"
+    },
+    "scan": {
+     "item_struct_max": "0x100",
+     "name_offsets": [
+      "0x4",
+      "0x8",
+      "0xC"
+     ]
+    },
+    "sections": {
+     "bag": {
+      "manager": "0x1070",
+      "remote_only": false
+     },
+     "vendendo": {
+      "manager": "0x10C4",
+      "remote_only": false
+     },
+     "comprando": {
+      "manager": "0x10C8",
+      "remote_only": false
+     },
+     "carrinho_compra": {
+      "manager": "0x1084",
+      "remote_only": true
+     },
+     "carrinho_venda": {
+      "manager": "0x1088",
+      "remote_only": true
+     },
+     "loja_remota_vendendo": {
+      "manager": "0x10CC",
+      "remote_only": true
+     },
+     "loja_remota_comprando": {
+      "manager": "0x10D0",
+      "remote_only": true
+     }
+    }
+   }
+  },
+  "the_classic_187": {
+   "label": "The Classic 1.8.7",
+   "module": "elementclient_64.exe",
+   "static_module": "TheClassicApi.dll",
+   "arch": "x64",
+   "attributes": {
+    "nivel": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x954",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x95C",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp_max": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x9B8",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x964",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp_max": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x9C0",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x968",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "chi": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0x974",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp_alvo": {
+     "base": "0x1C19220",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "amuleto_hp": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [
+      "0x1D70",
+      "0x18",
+      "0xA0"
+     ],
+     "offset": "0x150",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "amuleto_hp_max": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [
+      "0x1D70",
+      "0x18",
+      "0xA0",
+      "0x158"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [
+      "0x1D70",
+      "0x18",
+      "0xA8"
+     ],
+     "offset": "0x150",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp_max": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [
+      "0x1D70",
+      "0x18",
+      "0xA8",
+      "0x158"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "moedas": {
+     "module": "TheClassicApi.dll",
+     "base": "0xCA7F88",
+     "chain": [],
+     "offset": "0xB40",
+     "type": "int",
+     "ptr_size": 8
+    }
+   }
+  },
+  "the_classic_alvorecer_sombrio": {
+   "label": "The Classic Alvorecer Sombrio",
+   "module": "ElementClient.exe",
+   "attributes": {
+    "nivel": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4C4",
+     "type": "int"
+    },
+    "hp": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4CC",
+     "type": "int"
+    },
+    "hp_max": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x518",
+     "type": "int"
+    },
+    "mp": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D0",
+     "type": "int"
+    },
+    "mp_max": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x51C",
+     "type": "int"
+    },
+    "xp": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4D4",
+     "type": "int"
+    },
+    "xp_alvo": {
+     "base": "0xA48038",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "chi": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x4E0",
+     "type": "int"
+    },
+    "amuleto_hp": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int"
+    },
+    "amuleto_hp_max": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int"
+    },
+    "hierograma_mp": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0",
+      "0x1074",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0xA1A4E4",
+     "chain": [
+      "0x4",
+      "0x3F0",
+      "0x0"
+     ],
+     "offset": "0x5A0",
+     "type": "int",
+     "ptr_size": 4
+    }
+   },
+   "shop": {
+    "module": "ElementClient.exe",
+    "static_offset": "0xA1A4E4",
+    "img_url": "https://pwdatabase.theclassic.games/assets/img/vtheclassicpwalvorecer/{id}.png",
+    "chain": [
+     "0x4",
+     "0x3F0",
+     "0x0"
+    ],
+    "player": {
+     "moedas": "0x5A0",
+     "ultimo_login": "0x161C",
+     "janela": "0x680",
+     "role": "0x4B8",
+     "pos_x": "0x3C",
+     "pos_y": "0x40",
+     "pos_z": "0x44",
+     "fwd_x": "0x6C",
+     "fwd_z": "0x4C",
+     "nome_loja": "0x828"
+    },
+    "janela_vendo_outra": 3,
+    "janela_loja_ativa": 2,
+    "map": {
+     "off_x": 4000,
+     "off_z": 5500,
+     "divisor": 10
+    },
+    "manager_layout": {
+     "array": "0xC",
+     "capacity": "0x10"
+    },
+    "item": {
+     "id": "0xC",
+     "count": "0x14",
+     "max_stack": "0x18",
+     "price": "0x1C"
+    },
+    "scan": {
+     "item_struct_max": "0x100",
+     "name_offsets": [
+      "0x4",
+      "0x8",
+      "0xC"
+     ]
+    },
+    "sections": {
+     "bag": {
+      "manager": "0x1070",
+      "remote_only": false
+     },
+     "vendendo": {
+      "manager": "0x10C4",
+      "remote_only": false
+     },
+     "comprando": {
+      "manager": "0x10C8",
+      "remote_only": false
+     },
+     "carrinho_compra": {
+      "manager": "0x1084",
+      "remote_only": true
+     },
+     "carrinho_venda": {
+      "manager": "0x1088",
+      "remote_only": true
+     },
+     "loja_remota_vendendo": {
+      "manager": "0x10CC",
+      "remote_only": true
+     },
+     "loja_remota_comprando": {
+      "manager": "0x10D0",
+      "remote_only": true
+     }
+    }
+   }
+  },
+  "meta_pw": {
+   "label": "Meta PW",
+   "module": "elementclient_64.exe",
+   "arch": "x64",
+   "attributes": {
+    "nivel": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x8CC",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x8D4",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp_max": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x92C",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x8D8",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp_max": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x930",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x8DC",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp_alvo": {
+     "base": "0x1730930",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "chi": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0x8E8",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "amuleto_hp": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8",
+      "0x1B70",
+      "0x18",
+      "0xA0"
+     ],
+     "offset": "0x130",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "amuleto_hp_max": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8",
+      "0x1B70",
+      "0x18",
+      "0xA0",
+      "0x138"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8",
+      "0x1B70",
+      "0x18",
+      "0xA8"
+     ],
+     "offset": "0x130",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp_max": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8",
+      "0x1B70",
+      "0x18",
+      "0xA8",
+      "0x138"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "moedas": {
+     "base": "0x01728868",
+     "chain": [
+      "0x8"
+     ],
+     "offset": "0xA78",
+     "type": "int",
+     "ptr_size": 8
+    }
+   }
+  },
+  "lug": {
+   "label": "PW LUG",
+   "module": "elementclient_64.exe",
+   "arch": "x64",
+   "attributes": {
+    "nivel": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x944",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x94C",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hp_max": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x9A8",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x954",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "mp_max": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x9B0",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x958",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "chi": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0x964",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "xp_alvo": {
+     "base": "0x1B44B10",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "amuleto_hp": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68",
+      "0x1D70",
+      "0x18",
+      "0xA0"
+     ],
+     "offset": "0x150",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "amuleto_hp_max": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68",
+      "0x1D70",
+      "0x18",
+      "0xA0",
+      "0x158"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "moedas": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68"
+     ],
+     "offset": "0xB30",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68",
+      "0x1D70",
+      "0x18",
+      "0xA8"
+     ],
+     "offset": "0x150",
+     "type": "int",
+     "ptr_size": 8
+    },
+    "hierograma_mp_max": {
+     "base": "0x1B6E838",
+     "chain": [
+      "0x68",
+      "0x1D70",
+      "0x18",
+      "0xA8",
+      "0x158"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 8
+    }
+   }
+  },
+  "unlimited": {
+   "label": "PW Unlimited",
+   "module": "ElementClient.exe",
+   "arch": "x86",
+   "attributes": {
+    "nivel": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4C4",
+     "type": "int"
+    },
+    "hp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4CC",
+     "type": "int"
+    },
+    "hp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x520",
+     "type": "int"
+    },
+    "mp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4D0",
+     "type": "int"
+    },
+    "mp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x524",
+     "type": "int"
+    },
+    "xp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4D4",
+     "type": "int"
+    },
+    "chi": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4E0",
+     "type": "int"
+    },
+    "xp_alvo": {
+     "base": "0xA45950",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "amuleto_hp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int"
+    },
+    "amuleto_hp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int"
+    },
+    "hierograma_mp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x5A8",
+     "type": "int",
+     "ptr_size": 4
+    }
+   }
+  },
+  "nirvana": {
+   "label": "PW Nirvana",
+   "module": "ElementClient.exe",
+   "arch": "x86",
+   "attributes": {
+    "nivel": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4C4",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4CC",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x520",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "mp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4D0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "mp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x524",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "xp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4D4",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "chi": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4E0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "amuleto_hp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "amuleto_hp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4",
+      "0x10A4",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0xA662FC",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x5A8",
+     "type": "int",
+     "ptr_size": 4
+    }
+   }
+  },
+  "pw_avalon": {
+   "label": "PW Avalon",
+   "module": "ElementClient.exe",
+   "arch": "x86",
+   "attributes": {
+    "nivel": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x4FC",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hp": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x504",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hp_max": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x578",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "mp": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x508",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "mp_max": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x57C",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "xp": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x50C",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "chi": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x518",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "xp_alvo": {
+     "base": "0x11B7DA8",
+     "chain": [],
+     "offset": "0x0",
+     "type": "int_array",
+     "index_by": "nivel",
+     "element_size": 4
+    },
+    "amuleto_hp": {
+     "base": "0x998678",
+     "chain": [
+      "0x4",
+      "0x10FC",
+      "0xC",
+      "0x50"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "amuleto_hp_max": {
+     "base": "0x998678",
+     "chain": [
+      "0x4",
+      "0x10FC",
+      "0xC",
+      "0x50",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp": {
+     "base": "0x998678",
+     "chain": [
+      "0x4",
+      "0x10FC",
+      "0xC",
+      "0x54"
+     ],
+     "offset": "0xC0",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "hierograma_mp_max": {
+     "base": "0x998678",
+     "chain": [
+      "0x4",
+      "0x10FC",
+      "0xC",
+      "0x54",
+      "0xC8"
+     ],
+     "offset": "0x144",
+     "type": "int",
+     "ptr_size": 4
+    },
+    "moedas": {
+     "base": "0x998678",
+     "chain": [
+      "0x4"
+     ],
+     "offset": "0x604",
+     "type": "int",
+     "ptr_size": 4
+    }
+   }
+  }
+ }
+}

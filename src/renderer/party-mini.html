@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+  <title>PW Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mini">
+  <header class="titlebar">
+    <div class="tb-side"></div>
+    <div class="tb-title"><span class="logo">PW</span><span>PW Helper</span></div>
+    <div class="tb-side tb-right">
+      <button id="btn-min" class="tb-btn" title="Minimizar">–</button>
+      <button id="btn-close" class="tb-btn" title="Fechar">✕</button>
+    </div>
+  </header>
+  <div id="mini" class="mini-root"></div>
+  <div id="toast" class="toast" hidden></div>
+  <script src="i18n.js"></script>
+  <script src="ui.js"></script>
+  <script src="accounts.js"></script>
+  <script src="offsets.js"></script>
+  <script src="party.js"></script>
+  <script src="party-mini.js"></script>
+</body>
+</html>
